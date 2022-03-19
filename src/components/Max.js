@@ -3,9 +3,7 @@ import { connect } from "react-redux";
 class Max extends React.Component{
 
     render(){
-        const values = this.props.counters.map(counter => {
-            return counter.value;
-        });
+        const values = this.props.counters.map(counter => counter.value);
         return(
             <div>
                 <h1>Max : {Math.max(...values)}</h1>

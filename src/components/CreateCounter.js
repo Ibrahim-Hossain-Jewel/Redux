@@ -14,11 +14,11 @@ class CreateCounter extends Component{
         return (
           <div>
             <p>
-            <input type="text" 
-                placeholder="name" 
-                value={this.state.name}
-                onChange = {(e)=>this.setState({name: e.target.value})}
-            />
+                <input type="text" 
+                    placeholder="name" 
+                    value={this.state.name}
+                    onChange = {(e)=>this.setState({name: e.target.value})}
+                />
             </p>
             <p>
               <button onClick={()=> this.props.newCounter(this.state.name)}>Create</button>

@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Counter from '../Counter';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducers from '../reducers';
 import Total from '../Total';
 import Max from '../Max';
 import CreateCounter from '../CreateCounter';
+import Counters from '../Counters';
 
 const store = createStore(reducers)
 class App extends React.Component{
@@ -15,7 +15,7 @@ class App extends React.Component{
       <Provider store={store}>
         <div className="App">
         <CreateCounter />
-          <Counter />
+          <Counters />
           <div>
             <Total />
             <Max />

@@ -18,7 +18,7 @@ export const decrementCounter = (index)=>{
 }
 export const newCounter = (name)=>{
     return {
-        type: 'NEW_COUNTER',
+        type: 'NEW_COUNTER',  //This action return new_counter
         payload: {name}
     }
 }
